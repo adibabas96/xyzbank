@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("6339fa52-48a3-4d7f-ac9b-d743db6e34c8",{name:"ASUS"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>feature.AddCustomer</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2025-12-12 01:05:27 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:96]"><span>[1:96]</span> <span>As a bank manager, I want to add, read and delete customer</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:122]"><span>[2:122]</span> <span>As a customer, I want to perform deposit and withdrawal transaction</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">feature/AddCustomer.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Add new customer</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:96]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:96]</span>
+                <span class="scenario-name">As a bank manager, I want to add, read and delete customer</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>27604</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:96]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:96]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chrome&#39;, keepSession: true, addOptions: [&quot;--remote-allow-origins=*&quot;]}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:96]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>driver &#39;https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2419</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:96]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def customers =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.6">[
+{ firstName: &quot;Kyo&quot;, lastName: &quot;Kusanagi&quot;, postCode: &quot;L789C349&quot; },
+{ firstName: &quot;Kyo&quot;, lastName: &quot;Mina&quot;, postCode: &quot;M098Q585&quot; },
+{ firstName: &quot;Lola&quot;, lastName: &quot;Rose&quot;, postCode: &quot;A897N450&quot; },
+{ firstName: &quot;Jackson&quot;, lastName: &quot;Connely&quot;, postCode: &quot;L789C349&quot; },
+{ firstName: &quot;Noah&quot;, lastName: &quot;Jay&quot;, postCode: &quot;L789C349&quot;}
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:96]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def addSteps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.16">function(customer){
+ eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[2]/div/div/form/div[1]/input&#39;, customer.firstName)&quot;)
+ eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[2]/div/div/form/div[2]/input&#39;, customer.lastName)&quot;)
+ eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[2]/div/div/form/div[3]/input&#39;, customer.postCode)&quot;)
+ eval(&quot;click(&#39;/html/body/div/div/div[2]/div/div[2]/div/div/form/button&#39;)&quot;)
+ eval(&quot;dialog(true)&quot;)
+ eval(&quot;delay(1000)&quot;)
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:96]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref bg-step">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def verifySteps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.28">function(customer){
+ eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[2]/div/form/div/div/input&#39;, customer.firstName)&quot;)
+ eval(&quot;delay(1000)&quot;)
+ karate.log(&#39;Customer: &#39; + customer.firstName + &#39; &#39; + customer.lastName + &#39; - &#39; + customer.postCode);
+ if (!text(&#39;/html/body/div/div/div[2]/div/div[2]/div/div&#39;).includes(customer.lastName) || !text(&#39;/html/body/div/div/div[2]/div/div[2]/div/div&#39;).includes(customer.postCode)) {
+    karate.fail(&#39;Customer not found&#39;);
+ }
+ eval(&quot;clear(&#39;/html/body/div/div/div[2]/div/div[2]/div/form/div/div/input&#39;)&quot;)
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:96]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref bg-step">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def deleteSteps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.42">function(customer){
+ eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[2]/div/form/div/div/input&#39;, customer.firstName)&quot;)
+ eval(&quot;delay(1000)&quot;)
+ eval(&quot;click(&#39;/html/body/div/div/div[2]/div/div[2]/div/div/table/tbody/tr[1]/td[5]/button&#39;)&quot;)
+ eval(&quot;clear(&#39;/html/body/div/div/div[2]/div/div[2]/div/form/div/div/input&#39;)&quot;)
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:96]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref bg-step">51</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def txn =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.51">[
+{ amount: 50000, txnType: &quot;credit&quot; },
+{ amount: 3000, txnType: &quot;debit&quot; },
+{ amount: 2000, txnType: &quot;debit&quot; },
+{ amount: 5000, txnType: &quot;credit&quot; },
+{ amount: 10000, txnType: &quot;debit&quot; },
+{ amount: 15000, txnType: &quot;debit&quot; },
+{ amount: 1500, txnType: &quot;credit&quot; }
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:96]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref bg-step">63</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def balance = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:96]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref bg-step">64</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def txnSteps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.64">function(txn){
+  if (txn.txnType == &#39;credit&#39;) {
+    eval(&quot;click(&#39;/html/body/div/div/div[2]/div/div[3]/button[2]&#39;)&quot;)
+    eval(&quot;delay(1000)&quot;)
+    eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[4]/div/form/div/input&#39;, txn.amount.toString())&quot;)
+    eval(&quot;click(&#39;/html/body/div/div/div[2]/div/div[4]/div/form/button&#39;)&quot;)
+    balance = balance + txn.amount;
+  }
+  else if (txn.txnType == &#39;debit&#39;) {
+    eval(&quot;click(&#39;/html/body/div/div/div[2]/div/div[3]/button[3]&#39;)&quot;)
+    eval(&quot;delay(1000)&quot;)
+    eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[4]/div/form/div/input&#39;, txn.amount.toString())&quot;)
+    eval(&quot;click(&#39;/html/body/div/div/div[2]/div/div[4]/div/form/button&#39;)&quot;)
+    balance = balance - txn.amount;
+  }
+  var actualBalance = text(&#39;/html/body/div/div/div[2]/div/div[2]/strong[2]&#39;)
+  karate.log(&#39;Transaction: &#39; + txn.amount.toString() + &#39; &#39; + txn.txnType + &#39;. Expected balance: &#39; + balance + &#39;, Actual balance: &#39; + actualBalance);
+  if (actualBalance != balance.toString()) {
+    karate.fail(&#39;Balance mismatch&#39;);
+  }
+  eval(&quot;delay(1000)&quot;)
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Login as bank manager</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>click(&quot;/html/body/div/div/div[2]/div/div[1]/div[2]/button&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3066</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>delay(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1018</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match driver.url == &#39;https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Select add customer</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>click(&quot;/html/body/div/div/div[2]/div/div[1]/button[1]&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>delay(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1012</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Add customers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>karate.forEach(customers, addSteps)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5546</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Verify added customers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>click(&quot;/html/body/div/div/div[2]/div/div[1]/button[3]&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref passed">111</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>karate.forEach(customers, verifySteps)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8220</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.111">13:04:52.125 Customer: Kyo Kusanagi - L789C349 
+13:04:53.165 Customer: Kyo Mina - M098Q585 
+13:04:54.194 Customer: Lola Rose - A897N450 
+13:04:55.253 Customer: Jackson Connely - L789C349 
+13:04:56.283 Customer: Noah Jay - L789C349 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Delete specific customers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.114">
+      <div class="step-ref passed">114</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>karate.forEach(customers.slice(3,5), deleteSteps)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2098</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Verify remaining customers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref passed">117</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>click(&quot;/html/body/div/div/div[2]/div/div[1]/button[1]&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.118">
+      <div class="step-ref passed">118</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>delay(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1016</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.119">
+      <div class="step-ref passed">119</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>click(&quot;/html/body/div/div/div[2]/div/div[1]/button[3]&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.120">
+      <div class="step-ref passed">120</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>karate.forEach(customers.slice(0,3), verifySteps)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3101</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.120">13:05:00.451 Customer: Kyo Kusanagi - L789C349 
+13:05:01.475 Customer: Kyo Mina - M098Q585 
+13:05:02.512 Customer: Lola Rose - A897N450 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:122]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:122]</span>
+                <span class="scenario-name">As a customer, I want to perform deposit and withdrawal transaction</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>24909</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:122]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:122]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chrome&#39;, keepSession: true, addOptions: [&quot;--remote-allow-origins=*&quot;]}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:122]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>driver &#39;https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1537</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:05:02.557 preferred port 9222 not available, will use: 62496
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:122]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def customers =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.6">[
+{ firstName: &quot;Kyo&quot;, lastName: &quot;Kusanagi&quot;, postCode: &quot;L789C349&quot; },
+{ firstName: &quot;Kyo&quot;, lastName: &quot;Mina&quot;, postCode: &quot;M098Q585&quot; },
+{ firstName: &quot;Lola&quot;, lastName: &quot;Rose&quot;, postCode: &quot;A897N450&quot; },
+{ firstName: &quot;Jackson&quot;, lastName: &quot;Connely&quot;, postCode: &quot;L789C349&quot; },
+{ firstName: &quot;Noah&quot;, lastName: &quot;Jay&quot;, postCode: &quot;L789C349&quot;}
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:122]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def addSteps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.16">function(customer){
+ eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[2]/div/div/form/div[1]/input&#39;, customer.firstName)&quot;)
+ eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[2]/div/div/form/div[2]/input&#39;, customer.lastName)&quot;)
+ eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[2]/div/div/form/div[3]/input&#39;, customer.postCode)&quot;)
+ eval(&quot;click(&#39;/html/body/div/div/div[2]/div/div[2]/div/div/form/button&#39;)&quot;)
+ eval(&quot;dialog(true)&quot;)
+ eval(&quot;delay(1000)&quot;)
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:122]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref bg-step">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def verifySteps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.28">function(customer){
+ eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[2]/div/form/div/div/input&#39;, customer.firstName)&quot;)
+ eval(&quot;delay(1000)&quot;)
+ karate.log(&#39;Customer: &#39; + customer.firstName + &#39; &#39; + customer.lastName + &#39; - &#39; + customer.postCode);
+ if (!text(&#39;/html/body/div/div/div[2]/div/div[2]/div/div&#39;).includes(customer.lastName) || !text(&#39;/html/body/div/div/div[2]/div/div[2]/div/div&#39;).includes(customer.postCode)) {
+    karate.fail(&#39;Customer not found&#39;);
+ }
+ eval(&quot;clear(&#39;/html/body/div/div/div[2]/div/div[2]/div/form/div/div/input&#39;)&quot;)
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:122]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref bg-step">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def deleteSteps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.42">function(customer){
+ eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[2]/div/form/div/div/input&#39;, customer.firstName)&quot;)
+ eval(&quot;delay(1000)&quot;)
+ eval(&quot;click(&#39;/html/body/div/div/div[2]/div/div[2]/div/div/table/tbody/tr[1]/td[5]/button&#39;)&quot;)
+ eval(&quot;clear(&#39;/html/body/div/div/div[2]/div/div[2]/div/form/div/div/input&#39;)&quot;)
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:122]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref bg-step">51</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def txn =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.51">[
+{ amount: 50000, txnType: &quot;credit&quot; },
+{ amount: 3000, txnType: &quot;debit&quot; },
+{ amount: 2000, txnType: &quot;debit&quot; },
+{ amount: 5000, txnType: &quot;credit&quot; },
+{ amount: 10000, txnType: &quot;debit&quot; },
+{ amount: 15000, txnType: &quot;debit&quot; },
+{ amount: 1500, txnType: &quot;credit&quot; }
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:122]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref bg-step">63</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def balance = 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:122]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref bg-step">64</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def txnSteps =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.64">function(txn){
+  if (txn.txnType == &#39;credit&#39;) {
+    eval(&quot;click(&#39;/html/body/div/div/div[2]/div/div[3]/button[2]&#39;)&quot;)
+    eval(&quot;delay(1000)&quot;)
+    eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[4]/div/form/div/input&#39;, txn.amount.toString())&quot;)
+    eval(&quot;click(&#39;/html/body/div/div/div[2]/div/div[4]/div/form/button&#39;)&quot;)
+    balance = balance + txn.amount;
+  }
+  else if (txn.txnType == &#39;debit&#39;) {
+    eval(&quot;click(&#39;/html/body/div/div/div[2]/div/div[3]/button[3]&#39;)&quot;)
+    eval(&quot;delay(1000)&quot;)
+    eval(&quot;input(&#39;/html/body/div/div/div[2]/div/div[4]/div/form/div/input&#39;, txn.amount.toString())&quot;)
+    eval(&quot;click(&#39;/html/body/div/div/div[2]/div/div[4]/div/form/button&#39;)&quot;)
+    balance = balance - txn.amount;
+  }
+  var actualBalance = text(&#39;/html/body/div/div/div[2]/div/div[2]/strong[2]&#39;)
+  karate.log(&#39;Transaction: &#39; + txn.amount.toString() + &#39; &#39; + txn.txnType + &#39;. Expected balance: &#39; + balance + &#39;, Actual balance: &#39; + actualBalance);
+  if (actualBalance != balance.toString()) {
+    karate.fail(&#39;Balance mismatch&#39;);
+  }
+  eval(&quot;delay(1000)&quot;)
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Login as customer</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.124">
+      <div class="step-ref passed">124</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>click(&quot;/html/body/div/div/div[2]/div/div[1]/div[1]/button&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3016</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.125">
+      <div class="step-ref passed">125</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>delay(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1014</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.126">
+      <div class="step-ref passed">126</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match driver.url == &#39;https://www.globalsqa.com/angularJs-protractor/BankingProject/#/customer&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Select name</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.129">
+      <div class="step-ref passed">129</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>select(&quot;//*[@id=&#39;userSelect&#39;]&quot;, 1)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref passed">130</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>delay(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1007</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref passed">131</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>click(&quot;/html/body/div/div/div[2]/div/form/button&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Select account</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.134">
+      <div class="step-ref passed">134</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>select(&quot;//*[@id=&#39;accountSelect&#39;]&quot;, 2)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3013</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.135">
+      <div class="step-ref passed">135</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>delay(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1013</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Verify balance 0</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.138">
+      <div class="step-ref passed">138</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match text(&quot;/html/body/div/div/div[2]/div/div[2]/strong[2]&quot;) == &#39;0&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Perform transaction</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.141">
+      <div class="step-ref passed">141</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>karate.forEach(txn, txnSteps)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14294</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.141">13:05:14.216 Transaction: 50000 credit. Expected balance: 50000, Actual balance: 50000 
+13:05:16.248 Transaction: 3000 debit. Expected balance: 47000, Actual balance: 47000 
+13:05:18.283 Transaction: 2000 debit. Expected balance: 45000, Actual balance: 45000 
+13:05:20.324 Transaction: 5000 credit. Expected balance: 50000, Actual balance: 50000 
+13:05:22.366 Transaction: 10000 debit. Expected balance: 40000, Actual balance: 40000 
+13:05:24.407 Transaction: 15000 debit. Expected balance: 25000, Actual balance: 25000 
+13:05:26.455 Transaction: 1500 credit. Expected balance: 26500, Actual balance: 26500 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,5 +1,7 @@
 # Java / Maven
-target/
+report/*
+!report/karate-report/
+!report/karate-report/**
 *.log
 *.tmp
 *.class

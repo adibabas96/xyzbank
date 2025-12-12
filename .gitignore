@@ -1,0 +1,18 @@
+# Java / Maven
+target/
+*.log
+*.tmp
+*.class
+*.jar
+*.war
+*.iml
+.idea/
+
+# Karate / Test artifacts
+karate-output/
+screenshots/
+report/
+*.bak
+
+# OS files
+.DS_Store
